@@ -374,3 +374,13 @@ Team Modal
   margin: 0;
   width: 30px;
 }
+
+@media (max-width: 768px) {
+  .modal {
+    left: 0;
+    margin: 0;
+    width: 100%;
+    padding: 50px 30px;
+  }
+
+}
