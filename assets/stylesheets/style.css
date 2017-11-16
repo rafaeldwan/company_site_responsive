@@ -338,11 +338,12 @@ Team Modal
 .modal {
   background: white;
   display: none;
-  margin: -283px -55px 0;
+  left: 50%;
+  margin: 0 -408px;
   padding: 125px 70px 90px 85px;
   position: absolute;
   text-align: left;
-  max-width: 815px;
+  max-width: 816px;
   z-index: 3;
 }
 .modal img {

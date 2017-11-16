@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/stylesheets/whitespace-reset.css">
   <link rel="stylesheet" href="assets/stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="assets/scripts/team_modal.js"></script>
   <title>SpaceDesign Projects</title>
 </head>
 <body>
@@ -25,14 +27,19 @@
       <article>
         <h2>Team</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniadolor</p>
-        <ul>
-
+        <ul id="members">
           <li>
             <a href="#">
               <figure><img src="assets/images/img_kevin.jpg" alt="b&amp;w portrait">
                 <figcaption>Kevin</figcaption>
               </figure>
             </a>
+            <aside class="modal" id="kevin" >
+              <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
+              <img src="assets/images/img_kevin.jpg" alt="b&amp;w portrait">
+              <h3>Kevin Wang</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </aside>
           </li>
           <li>
             <a href="#">
@@ -41,7 +48,12 @@
                 <figcaption>Louis</figcaption>
               </figure>
             </a>
-
+            <aside class="modal" id="louis">
+              <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
+              <img src="assets/images/img_louis.jpg" alt="b&amp;w portrait">
+              <h3>Louis Burton</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </aside>
           </li>
           <li>
             <a href="#">
@@ -49,6 +61,12 @@
                 <figcaption>Kasper</figcaption>
               </figure>
             </a>
+            <aside class="modal" id="kasper">
+              <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
+              <img src="assets/images/img_kasper.jpg" alt="b&amp;w portrait">
+              <h3>Kasper Salto</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </aside>
 
           </li>
           <li>
@@ -57,32 +75,14 @@
                 <figcaption>Chris</figcaption>
               </figure>
             </a>
+            <aside class="modal" id="chris">
+              <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
+              <img src="assets/images/img_chris.jpg" alt="b&amp;w portrait">
+              <h3>Chris Lee</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </aside>
           </li>
         </ul>
-        <aside class="modal" id="kevin" style="display: none">
-          <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
-          <img src="assets/images/img_kevin.jpg" alt="b&amp;w portrait">
-          <h3>Kevin Wang</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </aside>
-        <aside class="modal" id="louis">
-          <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
-          <img src="assets/images/img_louis.jpg" alt="b&amp;w portrait">
-          <h3>Louis Burton</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </aside>
-        <aside class="modal" id="kasper">
-          <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
-          <img src="assets/images/img_kasper.jpg" alt="b&amp;w portrait">
-          <h3>Kasper Salto</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </aside>
-        <aside class="modal" id="chris">
-          <a href="#"><img src="assets/images/icon_close.png" alt="close"></a>
-          <img src="assets/images/img_chris.jpg" alt="b&amp;w portrait">
-          <h3>Chris Lee</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </aside>
       </article>
       </div>
     <div class="modal-overlay"></div>
